@@ -6,7 +6,7 @@ from collections import OrderedDict
 
 def addressParser():
 	while(1):
-		inputAddress =  input("Enter one-line address: \n")
+		inputAddress =  input("\nEnter one-line address: \n")
 
 		if(inputAddress == "exit()"):
 			break;
