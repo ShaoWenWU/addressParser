@@ -41,6 +41,6 @@ To eliminate the environment setting and dependencies as much as possible. Here 
 
 ## Running
 
-In this challenge, I use docker container as a little virtual machine and only focus on the the functionality and correctness of address parsing. Once you start the container. 
+You can use docker container as a little virtual machine and only focus on the the functionality and correctness of address parsing. 
 
 

@@ -5,6 +5,8 @@ import re
 from collections import OrderedDict
 
 def addressParser():
+	print("Enter \"exit()\" to exit the script.")
+
 	while(1):
 		inputAddress =  input("\nEnter one-line address: \n")
 
@@ -20,8 +22,9 @@ def addressParser():
 
 			    parsedStreet = ' '.join([str(x[0]) for x in streetArray]) 
 
-			    # print("parsedStreet: ", parsedStreet)
-			    street = re.search(parsedStreet, inputAddress, flags=re.IGNORECASE).group(0)
+			    # substitute houseNumber with empty in the input string, 
+			    # erase leading and trailing space and specific chracter
+			    street = re.sub(houseNumber,'',inputAddress, flags=re.IGNORECASE ).rstrip('}{[]()?@$%^*<>/\\\"\'~;:-_,. ').lstrip('}{[]()?@$%^*<>/\\\"\'~;:-_,. ')
 
 			    addressDict = OrderedDict( [("street",street), ("housenumber",houseNumber)] )
 			    print(json.dumps(addressDict, ensure_ascii=False)) # output json object with orderedDict
@@ -32,7 +35,6 @@ def addressParser():
 
 
 def main():
-	print("Enter \"exit()\" to exit the script.")
 	addressParser()
 
 if __name__ == "__main__":
