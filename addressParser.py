@@ -22,15 +22,12 @@ def addressParser(inputAddress):
 
 				# substitute houseNumber with empty in the input string, 
 				# igore leading and trailing space and specific chracter
-				street = re.sub(houseNumber,'',inputAddress, flags=re.IGNORECASE ).rstrip('}{[]()?@$%^*<>/\\\"\'~;:-_,. ').lstrip('}{[]()?@$%^*<>/\\\"\'~;:-_,. ')
+				street = re.sub(houseNumber,'',inputAddress, flags=re.IGNORECASE ).rstrip('}{[]()?@$%^*<>/\\\"\'~;:-_,. ').lstrip('}{[]()?@$%^*<>/\\\"\'~;:-_,. ').replace('  ', ' ')
 
 				addressDict = OrderedDict( [("street",street), ("housenumber",houseNumber)] )
 				return json.dumps(addressDict, ensure_ascii=False) # retnrn json object with orderedDict
 			except Exception as e:
 				print(e)
-
-
-   
 
 
 def main():

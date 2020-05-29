@@ -1,0 +1,3 @@
+Input,Expected
+Winterallee 3,"{""street"": ""Winterallee"", ""housenumber"": ""3""}"
+Musterstrasse 45,"{""street"": ""Musterstrasse"", ""housenumber"": ""45""}"
