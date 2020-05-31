@@ -1,10 +1,67 @@
-Input,Expected
-Winterallee 3,"{""street"": ""Winterallee"", ""housenumber"": ""3""}"
-Musterstrasse 45,"{""street"": ""Musterstrasse"", ""housenumber"": ""45""}"
-Blaufeldweg 123B,"{""street"": ""Blaufeldweg"", ""housenumber"": ""123B""}"
-Am B?chle 23,"{""street"": ""Am B?chle"", ""housenumber"": ""23""}"
-Auf der Vogelwiese 23 b,"{""street"": ""Auf der Vogelwiese"", ""housenumber"": ""23 b""}"
-"4, rue de la revolution","{""street"": ""rue de la revolution"", ""housenumber"": ""4""}"
-200 Broadway Av,"{""street"": ""Broadway Av"", ""housenumber"": ""200""}"
-"Calle Aduana, 29","{""street"": ""Calle Aduana"", ""housenumber"": ""29""}"
-Calle 39 No 1540,"{""street"": ""Calle 39"", ""housenumber"": ""No 1540""}"
+﻿Input,Expected,Remarks
+Winterallee 3,"{""street"": ""Winterallee"", ""housenumber"": ""3""}",FRIDAY
+Musterstrasse 45,"{""street"": ""Musterstrasse"", ""housenumber"": ""45""}",FRIDAY
+Blaufeldweg 123B,"{""street"": ""Blaufeldweg"", ""housenumber"": ""123B""}",FRIDAY
+Am Bächle 23,"{""street"": ""Am Bächle"", ""housenumber"": ""23""}",FRIDAY
+Auf der Vogelwiese 23 b,"{""street"": ""Auf der Vogelwiese"", ""housenumber"": ""23 b""}",FRIDAY
+"4, rue de la revolution","{""street"": ""rue de la revolution"", ""housenumber"": ""4""}",FRIDAY
+200 Broadway Av,"{""street"": ""Broadway Av"", ""housenumber"": ""200""}",FRIDAY
+"Calle Aduana, 29","{""street"": ""Calle Aduana"", ""housenumber"": ""29""}",FRIDAY
+Calle 39 No 1540,"{""street"": ""Calle 39"", ""housenumber"": ""No 1540""}",FRIDAY
+660 Nostrand Ave,"{""street"": ""Nostrand Ave"", ""housenumber"": ""660""}",us
+44 Court St,"{""street"": ""Court St"", ""housenumber"": ""44""}",us
+222 Lenox Road,"{""street"": ""Lenox Road"", ""housenumber"": ""222""}",us
+92-10 Roosevelt Avenue,"{""street"": ""Roosevelt Avenue"", ""housenumber"": ""92-10""}",us
+103 BEAL PKWY SE,"{""street"": ""BEAL PKWY SE"", ""housenumber"": ""103""}",us
+921 83 street,"{""street"": ""83 street"", ""housenumber"": ""921""}",us
+30 w 26 st,"{""street"": ""w 26 st"", ""housenumber"": ""30""}",us
+30 West 26th Street,"{""street"": ""West 26th Street"", ""housenumber"": ""30""}",us
+30 W 26th St,"{""street"": ""W 26th St"", ""housenumber"": ""30""}",us
+301 Commons Park S,"{""street"": ""Commons Park S"", ""housenumber"": ""301""}",us
+912-914 8TH ST,"{""street"": ""8TH ST"", ""housenumber"": ""912-914""}",us
+2120 E Hill Street,"{""street"": ""E Hill Street"", ""housenumber"": ""2120""}",us
+1036-1038 MC CARROLL ST,"{""street"": ""MC CARROLL ST"", ""housenumber"": ""1036-1038""}",us
+2455-B W BENCH RD,"{""street"": ""W BENCH RD"", ""housenumber"": ""2455-B""}",us
+25050 ALESSANDRO BLVD,"{""street"": ""ALESSANDRO BLVD"", ""housenumber"": ""25050""}",us
+99-40 63rd Rd,"{""street"": ""63rd Rd"", ""housenumber"": ""99-40""}",us
+2501 N Blackwelder Ave,"{""street"": ""N Blackwelder Ave"", ""housenumber"": ""2501""}",us
+5850 US Highway 431,"{""street"": ""US Highway 431"", ""housenumber"": ""5850""}",us
+16 1/2 Windward Road,"{""street"": ""Windward Road"", ""housenumber"": ""16 1/2""}",jm
+16½ Windward Road,"{""street"": ""Windward Road"", ""housenumber"": ""16½""}",jm
+"21, Kingswood Road","{""street"": ""Kingswood Road"", ""housenumber"": ""21""}",gb
+1A Egmont Road,"{""street"": ""Egmont Road"", ""housenumber"": ""1A""}",gb
+1a Egmont Road,"{""street"": ""Egmont Road"", ""housenumber"": ""1a""}",gb
+1-A Egmont Road,"{""street"": ""Egmont Road"", ""housenumber"": ""1-A""}",gb
+1-a Egmont Road,"{""street"": ""Egmont Road"", ""housenumber"": ""1-a""}",gb
+0 Egmont Road,"{""street"": ""Egmont Road"", ""housenumber"": ""0""}",gb
+-1 Egmont Road,"{""street"": ""Egmont Road"", ""housenumber"": ""-1""}",gb
+"C. de Ruiz de Alarcón, 23","{""street"": ""C. de Ruiz de Alarcón"", ""housenumber"": ""23""}",es
+"Paseo de la Castellana, 185","{""street"": ""Paseo de la Castellana"", ""housenumber"": ""185""}",es
+Cra 18#63-64 B,"{""street"": ""Cra 18"", ""housenumber"": ""#63-64 B""}",co
+"LÓPEZ MATEOS, 106","{""street"": ""LÓPEZ MATEOS"", ""housenumber"": ""106""}",me
+"Pç. Ramos de Azevedo, s/n","{""street"": ""Pç. Ramos de Azevedo"", ""housenumber"": ""s/n""}",br
+香港东路6号,"{""street"": ""香港东路"", ""housenumber"": ""6号""}",cn
+香港東路6號,"{""street"": ""香港東路"", ""housenumber"": ""6號""}",cn
+西九条高畠町25-1,"{""street"": ""西九条高畠町"", ""housenumber"": ""25-1""}",jp
+文京区4丁目3番2号,"{""street"": ""文京区4丁目"", ""housenumber"": ""3番2号""}",jp
+"135, Higashifunahashi","{""street"": ""Higashifunahashi"", ""housenumber"": ""135""}",jp
+"36, Teheran-ro 87-gil","{""street"": ""Teheran-ro 87-gil"", ""housenumber"": ""36""}",kr
+15 Melle St.,"{""street"": ""Melle St."", ""housenumber"": ""15""}",za
+Triftstraße 67,"{""street"": ""Triftstraße"", ""housenumber"": ""67""}",de
+Triftstrasse 67,"{""street"": ""Triftstrasse"", ""housenumber"": ""67""}",de
+Eduard Sueß Gasse 9,"{""street"": ""Eduard Sueß Gasse"", ""housenumber"": ""9""}",at
+Eduard-Sueß Gasse 9,"{""street"": ""Eduard-Sueß Gasse"", ""housenumber"": ""9""}",at
+Eduard-Sueß-Gasse 9,"{""street"": ""Eduard-Sueß-Gasse"", ""housenumber"": ""9""}",at
+Eduard Sueß-Gasse 9,"{""street"": ""Eduard Sueß-Gasse"", ""housenumber"": ""9""}",at
+Nieuwe Binnenweg 17-19,"{""street"": ""Nieuwe Binnenweg"", ""housenumber"": ""17-19""}",nl
+Olympia 1 A,"{""street"": ""Olympia"", ""housenumber"": ""1 A""}",nl
+Valdemarsgade 42,"{""street"": ""Valdemarsgade"", ""housenumber"": ""42""}",da
+1 Hämeenkatu,"{""street"": ""Hämeenkatu"", ""housenumber"": ""1""}",fi
+Sars gate 2A,"{""street"": ""Sars gate"", ""housenumber"": ""2A""}",no
+Storgatan 1,"{""street"": ""Storgatan"", ""housenumber"": ""1""}",se
+"str. Pacienței, nr. 9","{""street"": ""str. Pacienței"", ""housenumber"": ""nr. 9""}",ro
+"Дворцовая наб., 34","{""street"": ""Дворцовая наб."", ""housenumber"": ""34""}",ru
+Автолюбителейроезд 24,"{""street"": ""Автолюбителейроезд"", ""housenumber"": ""24""}",ru
+ул. Съезжинская д. 10,"{""street"": ""ул. Съезжинская"", ""housenumber"": ""д. 10""}",ru
+Triftstrasse,"{""street"": ""Triftstrasse"", ""housenumber"": """"}",others
+,"{""street"": """", ""housenumber"": """"}",others

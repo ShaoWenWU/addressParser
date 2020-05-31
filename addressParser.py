@@ -14,7 +14,6 @@ def addressParser(inputAddress):
 					parsedHouseNumber = ''
 
 				houseNumber = re.search(parsedHouseNumber, inputAddress, flags=re.IGNORECASE).group(0)
-				# print("houseNumber:　",houseNumber)
 
 				streetArray = [element for element in parsedAddress if 'house_number' not in element[1]]
 
@@ -22,7 +21,7 @@ def addressParser(inputAddress):
 
 				# substitute houseNumber with empty in the input string, 
 				# igore leading and trailing space and specific chracter
-				street = re.sub(houseNumber,'',inputAddress, flags=re.IGNORECASE ).rstrip('}{[]()?@$%^*<>/\\\"\'~;:-_,. ').lstrip('}{[]()?@$%^*<>/\\\"\'~;:-_,. ').replace('  ', ' ')
+				street = re.sub(houseNumber,'',inputAddress, flags=re.IGNORECASE ).rstrip('}{[]()?@$%^*<>/\\\"\'~;:-_, ').lstrip('}{[]()?@$%^*<>/\\\"\'~;:-_,. ').replace('  ', ' ').replace(' ,', ',')
 
 				addressDict = OrderedDict( [("street",street), ("housenumber",houseNumber)] )
 				return json.dumps(addressDict, ensure_ascii=False) # retnrn json object with orderedDict

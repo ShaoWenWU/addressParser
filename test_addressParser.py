@@ -6,11 +6,11 @@ import HtmlTestRunner
 
 def importTestCase(file_name):
 	rows=[]
-	with open(file_name) as f:
+	with open(file_name,encoding='utf-8-sig') as f:
 		readers = csv.DictReader(f, delimiter=',')
 		for row in readers:
 			rows.append([row['Input'], row['Expected']])
-	print("Imported DATA: \n", rows, "\n")
+	print("Imported DATA: ", file_name, "\n")
 	return rows
 
 
@@ -19,6 +19,7 @@ class Test_addressParser(unittest.TestCase):
 
 	def setUp(self):
 		pass
+	
 	
 	@data(*importTestCase('testCase.csv'))
 	@unpack
