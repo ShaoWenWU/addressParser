@@ -40,9 +40,7 @@ Provide (1) built Docker image on Docker Hub and (2) a Dockerfile that can build
 
 You can use the Docker container as a little virtual machine and only focus on the functionality and correctness of address parsing. To eliminate the environment setting and dependencies as much as possible. Here provide different ways that you can choose either pull the image from Docker Hub or build the image from source code. Then run the script in a Docker container.
 
-#### 1. Pull and run the built image from Docker Hub 
-
-​	[Docker Hub](https://hub.docker.com/repository/docker/wu8149/address_parser)
+#### 1. Pull and run the built image from [Docker Hub](https://hub.docker.com/repository/docker/wu8149/address_parser) 
 
 1. Pull the image from Docker Hub
 
