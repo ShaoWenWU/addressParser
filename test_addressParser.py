@@ -20,12 +20,10 @@ def importTestCase(file_name):
 class Test_addressParser(unittest.TestCase):
 
     def setUp(self):
-        # self.path = ['.', ]  # Check all file within current project
         self.path = ['addressParser.py', 'test_addressParser.py']
-        # pass
 
     def test_conformance(self):
-        """Test that we conform to PEP-8."""
+        # Test that we conform to PEP-8.
         style = pycodestyle.StyleGuide(quiet=True)
         result = style.check_files(self.path)
         self.assertEqual(
